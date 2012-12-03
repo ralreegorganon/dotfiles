@@ -107,6 +107,6 @@ bind h:ctrl,space push left  bar-resize:screenSizeX/2
 bind k:ctrl,space push up    bar-resize:screenSizeY
 bind j:ctrl,space push down  bar-resize:screenSizeY/2
 
-bind e:ctrl,space hint ASDFQWRZXCVJKL;YUIOPBNM,
+bind e:ctrl,space hint ASDFQWZXCV;YUIOPBNM,
 
 bind r:ctrl,space relaunch
