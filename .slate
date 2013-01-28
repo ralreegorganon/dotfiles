@@ -98,9 +98,14 @@ layout general 'Google Chrome' ${h50-l-v100-f}
 layout general 'Sublime Text 2' ${h50-r-v66-t}
 layout general 'Terminal' ${h50-r-v33-b} | ${h50-r-v66-t}
 
+layout codez 'Textual' ${h50-l-v100-f}
+layout codez 'Google Chrome' ${h50-l-v100-f}
+layout codez 'Terminal' ${h50-r-v100-f}
+
 bind 1:ctrl,space layout social-work
 bind 2:ctrl,space layout general
 bind 3:ctrl,space layout social-home
+bind 4:ctrl,space layout codez
 
 bind l:ctrl,space push right bar-resize:screenSizeX/2
 bind h:ctrl,space push left  bar-resize:screenSizeX/2
