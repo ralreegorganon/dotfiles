@@ -1,0 +1,3 @@
+Bundle 'msutherl/vim-colors-ir_black-256'
+Bundle 'jnwhiteh/vim-golang'
+Bundle 'undx/vim-gocode'
