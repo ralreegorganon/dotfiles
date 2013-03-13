@@ -39,3 +39,6 @@ let g:tagbar_type_go = {
 \ }
 
 let g:neocomplcache_omni_patterns.go = '\%(\.\|->\)\h\w*'
+
+au FileType ruby set softtabstop=2 tabstop=2 shiftwidth=2
+autocmd FileType ruby autocmd BufWritePre <buffer> call StripTrailingWhitespace()
