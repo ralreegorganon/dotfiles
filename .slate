@@ -102,10 +102,15 @@ layout codez 'Textual' ${h50-l-v100-f}
 layout codez 'Google Chrome' ${h50-l-v100-f}
 layout codez 'Terminal' ${h50-r-v100-f}
 
+layout motion 'Sublime Text 2' ${h66-r-v100-f}
+layout motion 'Terminal' ${h33-l-v33-b}
+layout motion 'iOS Simulator' ${h33-l-v66-t}
+
 bind 1:ctrl,space layout social-work
 bind 2:ctrl,space layout general
 bind 3:ctrl,space layout social-home
 bind 4:ctrl,space layout codez
+bind 5:ctrl,space layout motion
 
 bind l:ctrl,space push right bar-resize:screenSizeX/2
 bind h:ctrl,space push left  bar-resize:screenSizeX/2
