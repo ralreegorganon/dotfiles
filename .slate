@@ -1,13 +1,3 @@
-config defaultToCurrentScreen true
-config nudgePercentOf screenSize
-config resizePercentOf screenSize
-config windowHintsIgnoreHiddenWindows false
-config windowHintsShowIcons true
-config windowHintsSpread true
-config layoutFocusOnActivate true
-config windowHintsSpreadSearchWidth 150
-config windowHintsSpreadSearchHeight 150
-
 # full horizontal, full vertical
 alias h100-c-v100-m     move screenOriginX;screenOriginY                                    screenSizeX;screenSizeY 
 
@@ -112,11 +102,3 @@ bind 3:ctrl,space layout social-home
 bind 4:ctrl,space layout codez
 bind 5:ctrl,space layout motion
 
-bind l:ctrl,space push right bar-resize:screenSizeX/2
-bind h:ctrl,space push left  bar-resize:screenSizeX/2
-bind k:ctrl,space push up    bar-resize:screenSizeY
-bind j:ctrl,space push down  bar-resize:screenSizeY/2
-
-bind e:ctrl,space hint ASDFQWZXCV;YUIOPBNM,
-
-bind r:ctrl,space relaunch
