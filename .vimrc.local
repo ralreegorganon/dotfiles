@@ -40,7 +40,8 @@ let g:tagbar_type_go = {
 \ }
 
 let g:neocomplete#sources#omni#input_patterns.go = '[^.[:digit:] *\t]\.\w*'
-"let g:neocomplete#sources#omni#input_patterns.go = '\%(\.\|->\)\h\w*'
 
 au FileType ruby set softtabstop=2 tabstop=2 shiftwidth=2
 autocmd FileType ruby autocmd BufWritePre <buffer> call StripTrailingWhitespace()
+
+let g:indent_guides_enable_on_vim_startup = 0
