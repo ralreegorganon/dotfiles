@@ -21,7 +21,7 @@
 [merge]
 	tool = Kaleidoscope
 [push]
-	default = tracking
+	default = upstream
 [alias]
 	l = "log --graph --pretty='format:%C(yellow)%h %C(green)%ar %C(cyan)%an %C(red)%d %C(reset)%s'"
 	ll = log --stat --abbrev-commit
