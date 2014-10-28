@@ -48,6 +48,7 @@ install zsh
 
 cask install onepassword
 cask install atom
+cask install charles
 cask install citrix-receiver
 cask install dropbox
 cask install dungeon-crawl-stone-soup-tiles
