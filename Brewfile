@@ -9,6 +9,7 @@ tap homebrew/dupes
 tap homebrew/science
 
 install ack
+install ag
 install boot2docker
 install caskroom/cask/brew-cask
 install ctags
