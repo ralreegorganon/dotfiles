@@ -16,6 +16,7 @@ install ctags
 install exiftool
 install ffmpeg
 install fluid-synth
+install fswatch
 install ghostscript
 install git
 install gnuplot
