@@ -21,6 +21,8 @@ Plugin 'ervandew/supertab'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'Keithbsmiley/investigate.vim'
 Plugin 'majutsushi/tagbar'
+Plugin 'mustache/vim-mustache-handlebars'
+Plugin 'pangloss/vim-javascript'
 
 call vundle#end()
 
