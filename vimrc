@@ -23,6 +23,7 @@ Plugin 'Keithbsmiley/investigate.vim'
 Plugin 'majutsushi/tagbar'
 Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'pangloss/vim-javascript'
+Plugin 'othree/html5.vim'
 
 call vundle#end()
 
@@ -79,6 +80,8 @@ set mouse=a
 set ttymouse=xterm2
 
 let mapleader=","
+
+autocmd FileType html.handlebars :setlocal sw=2 ts=2 sts=2 
 
 " == Airline ==
 let g:airline_powerline_fonts = 1

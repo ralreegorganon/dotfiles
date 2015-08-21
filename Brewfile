@@ -7,6 +7,7 @@ tap homebrew/binary
 tap homebrew/boneyard
 tap homebrew/dupes
 tap homebrew/science
+tap aspnet/k
 
 install ack
 install ag
@@ -23,6 +24,7 @@ install gnuplot
 install httpie
 install hub
 install imagemagick
+install kvm
 install libyaml
 install macvim
 install mapnik
