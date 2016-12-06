@@ -30,7 +30,7 @@ call vundle#end()
 set t_Co=256
 set background=dark
 let base16colorspace=256 
-colorscheme base16-default
+colorscheme base16-default-dark
 
 set noesckeys
 set noerrorbells
@@ -82,6 +82,7 @@ set ttymouse=xterm2
 let mapleader=","
 
 autocmd FileType html.handlebars :setlocal sw=2 ts=2 sts=2 
+au BufRead,BufNewFile *.md setlocal textwidth=72
 
 " == Airline ==
 let g:airline_powerline_fonts = 1

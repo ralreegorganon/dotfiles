@@ -48,5 +48,3 @@ BASE16_SHELL="$HOME/.config/base16-shell/base16-$BASE16_SCHEME.dark.sh"
 
 # dot-net 
 source dnvm.sh
-
-eval `boot2docker shellinit 2>/dev/null`

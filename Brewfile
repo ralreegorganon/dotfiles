@@ -45,6 +45,7 @@ install sdl2_ttf
 install sdl_image
 install sdl_ttf
 install skipfish
+install tig
 install tmux
 install tree
 install wget
