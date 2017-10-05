@@ -41,6 +41,8 @@ bindkey -M vicmd '^R' history-incremental-search-backward
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
+export PATH="/usr/local/sbin:$PATH"
+
 # Base16 Shell
 BASE16_SCHEME="default"
 BASE16_SHELL="$HOME/.config/base16-shell/base16-$BASE16_SCHEME.dark.sh"
@@ -48,3 +50,10 @@ BASE16_SHELL="$HOME/.config/base16-shell/base16-$BASE16_SCHEME.dark.sh"
 
 # dot-net 
 source dnvm.sh
+
+function manp() {
+    man -t "$1" | open -f -a /Applications/Preview.app 
+}
+
+
+
