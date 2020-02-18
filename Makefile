@@ -8,6 +8,7 @@ all:
 	[ -f ~/.config/fish ] || ln -s $(CURDIR)/config/fish ~/.config/fish
 	[ -f ~/.config/kitty ] || ln -s $(CURDIR)/config/kitty ~/.config/kitty
 	[ -f ~/.config/starship.toml ] || ln -s $(CURDIR)/config/starship.toml ~/.config/starship.toml
+	[ -f ~/.config/nvim ] || ln -s $(CURDIR)/config/nvim ~/.config/nvim
 
 clean:
 	[ -f ~/.vimrc ] || rm ~/.vimrc
@@ -19,3 +20,4 @@ clean:
 	[ -f ~/.config/fish ] || rm ~/.config/fish
 	[ -f ~/.config/kitty ] || rm ~/.config/kitty 
 	[ -f ~/.config/starship.toml ] || rm ~/.config/starship.toml
+	[ -f ~/.config/nvim ] || rm ~/.config/nvim
