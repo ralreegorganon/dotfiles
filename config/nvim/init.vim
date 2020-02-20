@@ -8,6 +8,18 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
+Plug 'mhinz/vim-signify'
+Plug 'tpope/vim-rhubarb'
+Plug 'tpope/vim-fugitive'
+Plug 'ryanoasis/vim-devicons'
+Plug 'majutsushi/tagbar'
+Plug 'ludovicchabant/vim-gutentags'
+Plug 'tpope/vim-commentary'
+Plug 'rhysd/git-messenger.vim'
+Plug 'Yggdroot/indentLine'
+Plug 'scrooloose/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'mbbill/undotree'
 
 call plug#end()
 
@@ -15,9 +27,10 @@ colorscheme codedark
 
 let mapleader=","
 
+nnoremap <silent> <F5> :source $MYVIMRC<CR>
+
 " == vim-better-default ==
 
-let g:vim_better_default_backup_on = 1
 let g:vim_better_default_persistent_undo = 1
 
 " == vim-easymotion ==
@@ -50,6 +63,12 @@ let g:airline_theme='codedark'
 " == fzf ==
 
 nnoremap <C-P> :FZF<CR>
+
+" == nerdtree == 
+
+let g:NERDTreeMinimalUI = 1
+
+nnoremap <leader>n :NERDTreeToggle<cr>
 
 " == coc ==
 
@@ -142,8 +161,8 @@ autocmd CursorHold * silent call CocActionAsync('highlight')
 nmap <leader>rn <Plug>(coc-rename)
 
 " Formatting selected code.
-xmap <leader>f  <Plug>(coc-format-selected)
-nmap <leader>f  <Plug>(coc-format-selected)
+xmap <leader>F  <Plug>(coc-format-selected)
+nmap <leader>F  <Plug>(coc-format-selected)
 
 augroup mygroup
   autocmd!
