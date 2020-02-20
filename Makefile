@@ -9,6 +9,7 @@ all:
 	[ -f ~/.config/kitty ] || ln -s $(CURDIR)/config/kitty ~/.config/kitty
 	[ -f ~/.config/starship.toml ] || ln -s $(CURDIR)/config/starship.toml ~/.config/starship.toml
 	[ -f ~/.config/nvim ] || ln -s $(CURDIR)/config/nvim ~/.config/nvim
+	[ -f ~/.config/ranger ] || ln -s $(CURDIR)/config/ranger ~/.config/ranger
 
 clean:
 	[ -f ~/.vimrc ] || rm ~/.vimrc
@@ -21,3 +22,4 @@ clean:
 	[ -f ~/.config/kitty ] || rm ~/.config/kitty 
 	[ -f ~/.config/starship.toml ] || rm ~/.config/starship.toml
 	[ -f ~/.config/nvim ] || rm ~/.config/nvim
+	[ -f ~/.config/ranger ] || rm ~/.config/ranger
