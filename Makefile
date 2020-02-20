@@ -1,8 +1,6 @@
 all:
-	[ -f ~/.vimrc ] || ln -s $(CURDIR)/vimrc ~/.vimrc
 	[ -f ~/.gitconfig ] || ln -s $(CURDIR)/gitconfig ~/.gitconfig
 	[ -f ~/.tmux.conf ] || ln -s $(CURDIR)/tmux.conf ~/.tmux.conf
-	[ -f ~/.zshrc ] || ln -s $(CURDIR)/zshrc ~/.zshrc
 	[ -f ~/.hammerspoon/init.lua ] || ln -s $(CURDIR)/hammerspoon-init.lua ~/.hammerspoon/init.lua
 	[ -f ~/.hammerspoon/modules ] || ln -s $(CURDIR)/hammerspoon-modules ~/.hammerspoon/modules
 	[ -f ~/.config/fish ] || ln -s $(CURDIR)/config/fish ~/.config/fish
@@ -12,10 +10,8 @@ all:
 	[ -f ~/.config/ranger ] || ln -s $(CURDIR)/config/ranger ~/.config/ranger
 
 clean:
-	[ -f ~/.vimrc ] || rm ~/.vimrc
 	[ -f ~/.gitconfig ] || rm ~/.gitconfig
 	[ -f ~/.tmux.conf ] || rm ~/.tmux.conf
-	[ -f ~/.zshrc ] || rm ~/.zshrc
 	[ -f ~/.hammerspoon/init.lua ] || rm ~/.hammerspoon/init.lua
 	[ -f ~/.hammerspoon/modules ] || rm ~/.hammerspoon/modules
 	[ -f ~/.config/fish ] || rm ~/.config/fish
