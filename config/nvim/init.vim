@@ -23,6 +23,7 @@ Plug 'mbbill/undotree'
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
+Plug 'sheerun/vim-polyglot'
 
 call plug#end()
 
@@ -88,7 +89,9 @@ let g:coc_global_extensions = [
     \ 'coc-eslint',
     \ 'coc-tsserver',
     \ 'coc-emoji',
-    \ 'coc-java'
+    \ 'coc-java',
+    \ 'coc-marketplace',
+    \ 'coc-omnisharp'
     \ ]
 
 " ------ stuff straight from the readme below here ---
