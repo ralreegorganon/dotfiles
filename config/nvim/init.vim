@@ -23,6 +23,7 @@ Plug 'mbbill/undotree'
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'sheerun/vim-polyglot'
 
 call plug#end()
@@ -73,6 +74,9 @@ nnoremap <C-P> :FZF<CR>
 let g:NERDTreeMinimalUI = 1
 
 nnoremap <leader>n :NERDTreeToggle<cr>
+
+" == vim-go ==
+let g:go_def_mapping_enabled = 0
 
 " == coc ==
 
