@@ -68,6 +68,7 @@ let g:airline_theme='codedark'
 " == fzf ==
 
 nnoremap <C-P> :FZF<CR>
+nnoremap <C-T> :BTags<CR>
 
 " == nerdtree == 
 
