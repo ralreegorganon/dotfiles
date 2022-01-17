@@ -14,3 +14,6 @@ source /usr/local/opt/asdf/asdf.fish
 status --is-interactive; and source (anyenv init -|psub)
 
 starship init fish | source
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/jj/code/google-cloud-sdk/path.fish.inc' ]; . '/Users/jj/code/google-cloud-sdk/path.fish.inc'; end
