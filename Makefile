@@ -8,6 +8,7 @@ all:
 	[ -f ~/.config/starship.toml ] || ln -s $(CURDIR)/config/starship.toml ~/.config/starship.toml
 	[ -f ~/.config/nvim ] || ln -s $(CURDIR)/config/nvim ~/.config/nvim
 	[ -f ~/.config/ranger ] || ln -s $(CURDIR)/config/ranger ~/.config/ranger
+	[ -f ~/.config/wezterm ] || ln -s $(CURDIR)/config/wezterm ~/.config/wezterm
 
 clean:
 	[ -f ~/.gitconfig ] || rm ~/.gitconfig
@@ -19,3 +20,4 @@ clean:
 	[ -f ~/.config/starship.toml ] || rm ~/.config/starship.toml
 	[ -f ~/.config/nvim ] || rm ~/.config/nvim
 	[ -f ~/.config/ranger ] || rm ~/.config/ranger
+	[ -f ~/.config/wezterm ] || rm ~/.config/wezterm
