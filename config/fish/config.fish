@@ -9,6 +9,8 @@ set -g fish_user_paths "/usr/local/sbin" $fish_user_paths
 
 alias vim='nvim'
 
+abbr --add ls exa
+
 source /usr/local/opt/asdf/libexec/asdf.fish
 
 status --is-interactive; and source (anyenv init -|psub)
