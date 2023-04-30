@@ -1,18 +1,28 @@
 [user]
     name = Jason Jones
     email = jasonedwardjones@gmail.com
+    pager = delta
 [color]
     ui = true
 [core]
     excludesfile = /Users/jj/.gitignore_global
     editor = nvim
     autocrlf = input
+    pager = delta
+[delta]
+    navigate = true
+    light = false
+    line-numbers = true
+    hyperlinks = true
 [difftool "Kaleidoscope"]
     cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
 [diff]
     tool = Kaleidoscope
+    colorMoved = default
 [difftool]
     prompt = false
+[interactive]
+    diffFilter = delta --color-only
 [mergetool "Kaleidoscope"]
     cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
     trustExitCode = true
@@ -20,6 +30,7 @@
     prompt = false
 [merge]
     tool = Kaleidoscope
+    conflictstyle = diff3
 [push]
     default = upstream
 [alias]
