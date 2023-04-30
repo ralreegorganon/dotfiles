@@ -27,6 +27,16 @@ return {
   },
 
   lsp = {
+    setup_handlers = {
+      clangd = function(_, opts) require("clangd_extensions").setup { server = opts } end
+    },
+    config = {
+      clangd = {
+        capabilities = {
+          offsetEncoding = "utf-8",
+        },
+      },
+    },
     -- customize lsp formatting options
     formatting = {
       -- control auto formatting on save
@@ -36,6 +46,7 @@ return {
           -- "go",
         },
         ignore_filetypes = { -- disable format on save for specified filetypes
+          "cpp"
           -- "python",
         },
       },
