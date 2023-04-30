@@ -15,6 +15,7 @@ source /usr/local/opt/asdf/libexec/asdf.fish
 
 status --is-interactive; and source (anyenv init -|psub)
 
+zoxide init fish | source
 starship init fish | source
 
 # The next line updates PATH for the Google Cloud SDK.
