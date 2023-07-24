@@ -8,6 +8,7 @@ ifeq ($(UNAME), Darwin)
 	[ -f ~/.hammerspoon/modules ] || ln -s $(CURDIR)/hammerspoon-modules ~/.hammerspoon/modules
 endif
 	[ -f ~/.gitconfig ] || ln -s $(CURDIR)/gitconfig ~/.gitconfig
+	[ -f ~/.gitignore ] || ln -s $(CURDIR)/gitignore ~/.gitignore
 	[ -f ~/.tmux.conf ] || ln -s $(CURDIR)/tmux.conf ~/.tmux.conf
 	[ -f ~/.config/fish ] || ln -s $(CURDIR)/config/fish ~/.config/fish
 	[ -f ~/.config/nvim/lua/user ] || ln -s $(CURDIR)/config/nvim/lua/user ~/.config/nvim/lua/user
@@ -22,6 +23,7 @@ ifeq ($(UNAME), Darwin)
 	rm -f ~/.hammerspoon/modules
 endif
 	rm -f ~/.gitconfig
+	rm -f ~/.gitignore
 	rm -f ~/.tmux.conf
 	rm -f ~/.config/fish
 	rm -f ~/.config/nvim/lua/user
