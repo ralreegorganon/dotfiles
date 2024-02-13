@@ -2,18 +2,17 @@ set fish_greeting
 
 set -x EDITOR nvim
 
-set -x GOPATH /Users/jj/code/go
-set -x PATH $PATH /usr/local/go/bin $GOPATH/bin
+fish_add_path ~/.cargo/bin
 
-set -g fish_user_paths "/usr/local/sbin" $fish_user_paths
+abbr --add vim nvim
+abbr --add ls eza
 
-alias vim='nvim'
+# mac version
+#source /usr/local/opt/asdf/libexec/asdf.fish
+# linux version
+source ~/.asdf/asdf.fish
 
-abbr --add ls exa
-
-source /usr/local/opt/asdf/libexec/asdf.fish
-
-status --is-interactive; and source (anyenv init -|psub)
+status --is-interactive
 
 zoxide init fish | source
 
