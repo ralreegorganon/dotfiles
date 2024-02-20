@@ -30,7 +30,7 @@
     prompt = false
 [merge]
     tool = Kaleidoscope
-    conflictstyle = diff3
+    conflictstyle = zdiff3
 [push]
     default = upstream
 [alias]
