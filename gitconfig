@@ -1,7 +1,7 @@
-[user]
-    name = Jason Jones
-    email = jasonedwardjones@gmail.com
-    pager = delta
+[alias]
+    l = "log --graph --pretty='format:%C(yellow)%h %C(green)%ar %C(cyan)%an %C(red)%d %C(reset)%s'"
+    ll = "log --stat --abbrev-commit"
+    nuke = "!f(){ git branch --merged | grep -v '^* master$' | grep -v '^  master$' | xargs git branch -d; }; f"
 [color]
     ui = true
 [core]
@@ -33,7 +33,7 @@
     conflictstyle = zdiff3
 [push]
     default = upstream
-[alias]
-    l = "log --graph --pretty='format:%C(yellow)%h %C(green)%ar %C(cyan)%an %C(red)%d %C(reset)%s'"
-    ll = "log --stat --abbrev-commit"
-    nuke = "!f(){ git branch --merged | grep -v '^* master$' | grep -v '^  master$' | xargs git branch -d; }; f"
+[user]
+    name = Jason Jones
+    email = jasonedwardjones@gmail.com
+    pager = delta
