@@ -11,7 +11,7 @@ endif
 	[ -f ~/.gitignore ] || ln -s $(CURDIR)/gitignore ~/.gitignore
 	[ -f ~/.tmux.conf ] || ln -s $(CURDIR)/tmux.conf ~/.tmux.conf
 	[ -f ~/.config/fish ] || ln -s $(CURDIR)/config/fish ~/.config/fish
-	[ -f ~/.config/nvim/lua/user ] || ln -s $(CURDIR)/config/nvim/lua/user ~/.config/nvim/lua/user
+	[ -f ~/.config/nvim ] || ln -s $(CURDIR)/config/nvim ~/.config/nvim
 	[ -f ~/.config/ranger ] || ln -s $(CURDIR)/config/ranger ~/.config/ranger
 	[ -f ~/.config/wezterm ] || ln -s $(CURDIR)/config/wezterm ~/.config/wezterm
 
