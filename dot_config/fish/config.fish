@@ -8,9 +8,9 @@ abbr --add vim nvim
 abbr --add ls eza
 
 # mac version
-#source /usr/local/opt/asdf/libexec/asdf.fish
+source /usr/local/opt/asdf/libexec/asdf.fish
 # linux version
-source ~/.asdf/asdf.fish
+#source ~/.asdf/asdf.fish
 
 status --is-interactive
 
