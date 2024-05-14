@@ -1,3 +1,7 @@
 **/.DS_Store
 
 .config/fish/fishd.tmp.*
+
+{{ if ne .chezmoi.os "darwin" }}
+.hammerspoon
+{{ end }}
