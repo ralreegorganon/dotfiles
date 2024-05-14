@@ -2,13 +2,7 @@
 local wezterm = require 'wezterm'
 
 -- This table will hold the configuration.
-local config = {}
-
--- In newer versions of wezterm, use the config_builder which will
--- help provide clearer error messages
-if wezterm.config_builder then
-  config = wezterm.config_builder()
-end
+local config = wezterm.config_builder()
 
 config.font = wezterm.font 'CaskaydiaCove Nerd Font'
 -- config.font = wezterm.font 'Cascadia Code PL'
@@ -23,6 +17,8 @@ config.window_padding = {
     top = 0,
     bottom = 0
 }
+
+config.enable_wayland = false
 
 -- and finally, return the configuration to wezterm
 return config
