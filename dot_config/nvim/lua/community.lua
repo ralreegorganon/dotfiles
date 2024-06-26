@@ -13,5 +13,6 @@ return {
   { import = "astrocommunity.pack.ruby" },
   { import = "astrocommunity.pack.sql" },
   { import = "astrocommunity.pack.typescript" },
+  { import = "astrocommunity.pack.yaml" },
   -- import/override with your plugins folder
 }
