@@ -7,7 +7,6 @@
 ---@type LazySpec
 return {
 	"AstroNvim/astrocommunity",
-	{ import = "astrocommunity.fuzzy-finder.fzf-lua" },
 	{ import = "astrocommunity.pack.bash" },
 	{ import = "astrocommunity.pack.cs" },
 	{ import = "astrocommunity.pack.docker" },
