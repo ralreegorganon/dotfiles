@@ -3,6 +3,7 @@ set fish_greeting
 set -x EDITOR nvim
 
 fish_add_path ~/.cargo/bin
+fish_add_path ~/.local/bin
 
 abbr --add vim nvim
 abbr --add ls eza
