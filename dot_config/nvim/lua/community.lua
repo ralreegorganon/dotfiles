@@ -12,6 +12,7 @@ return {
 	{ import = "astrocommunity.pack.docker" },
 	{ import = "astrocommunity.pack.fish" },
 	{ import = "astrocommunity.pack.go" },
+	{ import = "astrocommunity.pack.golangci-lint" },
 	{ import = "astrocommunity.pack.helm" },
 	{ import = "astrocommunity.pack.json" },
 	{ import = "astrocommunity.pack.lua" },
