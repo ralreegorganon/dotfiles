@@ -1,11 +1,13 @@
 [tools]
+chezmoi = "latest"
 dotnet = "latest"
 k9s = "latest"
+kubectl = "latest"
 node = "23.6.0"
 python = "latest"
 ruby = "latest"
 shellcheck = "latest"
-trivy = "latest"
+terraform = "1.9.5"
 uv = "latest"
 yarn = "latest"
 
